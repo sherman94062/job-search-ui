@@ -1,10 +1,12 @@
 import { toolRegistry } from "./registry";
-import { searchJobsTool } from "./searchJobs";
 import { getJobDetailsTool } from "./getJobDetails";
-import { listCategoriesTool } from "./listCategories";
+import { searchMuseTool } from "./searchMuse";
+import { searchAdzunaTool } from "./searchAdzuna";
+import { searchJSearchTool } from "./searchJSearch";
 
-toolRegistry.register(searchJobsTool);
+toolRegistry.register(searchJSearchTool);
+toolRegistry.register(searchMuseTool);
+toolRegistry.register(searchAdzunaTool);
 toolRegistry.register(getJobDetailsTool);
-toolRegistry.register(listCategoriesTool);
 
 export { toolRegistry };
